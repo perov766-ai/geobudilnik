@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Геобудильник — не пропусти свою остановку</title>
+<meta name="description" content="Геобудильник разбудит тебя звуком и вибрацией прямо перед нужной остановкой. Автобус, троллейбус, трамвай, электричка. iOS и Android. Первый месяц — бесплатно.">
+<meta name="theme-color" content="#08090B">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Геобудильник — не пропусти свою остановку">
+<meta property="og:description" content="Спи, смотри тикток, читай книгу. Геобудильник разбудит тебя звуком и вибрацией перед твоей остановкой.">
+<meta property="og:image" content="assets/logo.png">
+<link rel="icon" href="assets/favicon.png" sizes="64x64">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hdr" id="top">
+  <div class="wrap hdr__in">
+    <a class="brand" href="#top" aria-label="Геобудильник — на главную">
+      <img src="assets/logo.png" alt="" width="44" height="44">
+      <span>Геобудильник</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#how">Как работает</a>
+      <a href="#features">Возможности</a>
+      <a href="#transport">Транспорт</a>
+      <a href="#price">Тариф</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <div class="hdr__cta">
+      <a class="btn btn--ghost" href="#download">Скачать</a>
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="wrap hero__in">
+      <div class="hero__copy">
+        <p class="eyebrow">iOS · Android · .рф</p>
+        <h1>Не пропусти<br><span class="grad">свою остановку</span></h1>
+        <p class="lead">Геобудильник разбудит тебя звуком и вибрацией прямо перед нужной остановкой — пока ты спишь, листаешь тикток или читаешь. Автобус, троллейбус, трамвай, электричка.</p>
+        <div class="hero__btns">
+          <!-- TODO: подставить реальные ссылки на магазины приложений -->
+          <a class="btn btn--store" href="#" aria-label="Скачать в App Store">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.6.8-3.3.8-.7 0-1.7-.8-2.9-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.8-.4 6.9 1.1 9.2.8 1.1 1.6 2.3 2.8 2.3 1.1 0 1.5-.7 2.9-.7 1.3 0 1.7.7 2.9.7 1.2 0 2-1.1 2.7-2.2.9-1.3 1.3-2.6 1.3-2.7-.1 0-2.5-1-2.5-3.8zM14.3 5.9c.6-.8 1-1.8.9-2.9-.9.1-2 .6-2.7 1.4-.6.7-1.1 1.8-.9 2.8 1 .1 2-.5 2.7-1.3z"/></svg>
+            <span><small>Загрузить в</small>App Store</span>
+          </a>
+          <a class="btn btn--store" href="#" aria-label="Скачать в Google Play">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l.1.1 9.3-9.3v-.2L3.6 2.3zM16.1 15.4l-3.1-3.1v-.2l3.1-3.1.1.1 3.7 2.1c1 .6 1 1.6 0 2.2l-3.8 2zM15 16.5l-3.2-3.2-8.5 8.5c.4.3 1 .3 1.7-.1l10-5.2M15 7.9L5 2.7c-.7-.4-1.3-.4-1.7-.1l8.5 8.5L15 7.9z"/></svg>
+            <span><small>Доступно в</small>Google Play</span>
+          </a>
+        </div>
+        <p class="hero__note"><b>Первый месяц — бесплатно.</b> Установка и использование без оплаты.</p>
+      </div>
+
+      <div class="hero__art">
+        <div class="phone">
+          <div class="phone__screen">
+            <div class="app">
+              <div class="app__status"><span>9:41</span><span class="app__dots">•••</span></div>
+              <div class="app__bell"><img src="assets/logo.png" alt="" width="64" height="64"></div>
+              <p class="app__label">Следующая остановка</p>
+              <p class="app__stop">Парк Победы</p>
+              <p class="app__sub">через 2 остановки · 4 мин</p>
+              <div class="app__ring">
+                <svg viewBox="0 0 120 120" aria-hidden="true">
+                  <circle cx="60" cy="60" r="52" class="ring-bg"/>
+                  <circle cx="60" cy="60" r="52" class="ring-fg"/>
+                </svg>
+                <div class="app__ringtxt"><b>340</b><small>метров</small></div>
+              </div>
+              <div class="app__row"><span>Звук</span><i class="dot on"></i></div>
+              <div class="app__row"><span>Вибрация</span><i class="dot on"></i></div>
+              <div class="app__row"><span>Тип транспорта</span><b>Автобус 12</b></div>
+            </div>
+          </div>
+        </div>
+        <div class="float float--1"><b>Просыпайся</b><span>через 1 остановку</span></div>
+        <div class="float float--2"><span class="pulse"></span> Геозона активна</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЗНАКОМО -->
+  <section class="sec" id="known">
+    <div class="wrap">
+      <h2 class="sec__title">Знакомо?</h2>
+      <p class="sec__lead">Ты не один такой. Почти каждый, кто ездит каждый день, хоть раз проезжал свою остановку.</p>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card__img"><img src="assets/sleep-bus.jpg" alt="Пассажир спит в автобусе" loading="lazy"></div>
+          <div class="card__body">
+            <h3>Спишь увлечённо</h3>
+            <p>Утро, тепло, мерный стук колёс — и ты уже на двадцать минут дальше, чем собирался.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card__img"><img src="assets/headphones-metro.jpg" alt="Пассажирка слушает музыку в метро в наушниках" loading="lazy"></div>
+          <div class="card__body">
+            <h3>В своём мире</h3>
+            <p>Наушники, плейлист, любимый сериал. Мир снаружи становится неважен — вместе с названиями остановок.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card__img"><img src="assets/window-seat.jpg" alt="Место у окна в электричке" loading="lazy"></div>
+          <div class="card__body">
+            <h3>Читаешь интересную книгу</h3>
+            <p>Ещё глава — и ты понимаешь, что уже давно едешь в обратную сторону.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card__img"><img src="assets/metro-sleep.jpg" alt="Спящий пассажир в метро" loading="lazy"></div>
+          <div class="card__body">
+            <h3>Просто задумчивый человек</h3>
+            <p>Смотришь в окно и думаешь о своём. Хорошо. Только остановка уже проехала.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- КАК РАБОТАЕТ -->
+  <section class="sec sec--alt" id="how">
+    <div class="wrap">
+      <p class="eyebrow">Три шага</p>
+      <h2 class="sec__title">Как это работает</h2>
+      <div class="steps">
+        <div class="step reveal">
+          <span class="step__n">01</span>
+          <h3>Выбери остановку</h3>
+          <p>Найди на карте точку, где тебе выходить. Или просто сохрани её один раз — она останется в любимых.</p>
+        </div>
+        <div class="step reveal">
+          <span class="step__n">02</span>
+          <h3>Задай радиус</h3>
+          <p>Геобудильник следит за твоим положением и срабатывает, когда до остановки остаётся заданное расстояние.</p>
+        </div>
+        <div class="step reveal">
+          <span class="step__n">03</span>
+          <h3>Живи своей жизнью</h3>
+          <p>Спи, читай, смотри. Телефон разбудит тебя звуком и вибрацией — вовремя, чтобы встать и выйти.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ВОЗМОЖНОСТИ -->
+  <section class="sec" id="features">
+    <div class="wrap">
+      <h2 class="sec__title">Освободи своё внимание</h2>
+      <p class="sec__lead">Тебе больше не нужно отвлекаться и контролировать, где ты едешь. Это делает приложение.</p>
+      <div class="feats">
+        <article class="feat reveal">
+          <div class="feat__ico"><svg viewBox="0 0 24 24"><path d="M12 3a1 1 0 011 1v.6a7 7 0 015.4 6.8v3l1.3 2.1a1 1 0 01-.9 1.5H5.2a1 1 0 01-.9-1.5L5.6 14.4v-3A7 7 0 0111 4.6V4a1 1 0 011-1zm0 17a2.8 2.8 0 01-2.7-2.2h5.4A2.8 2.8 0 0112 20z"/></svg></div>
+          <h3>Звук и вибрация</h3>
+          <p>Двойное оповещение, которое сложно не заметить: сигнал будит, вибрация подстраховывает в шумном вагоне.</p>
+        </article>
+        <article class="feat reveal">
+          <div class="feat__ico"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 017 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 017-7zm0 9.5A2.5 2.5 0 1012 6.5a2.5 2.5 0 000 5z"/></svg></div>
+          <h3>Точная геозона</h3>
+          <p>Работает по геолокации, а не по расписанию: приложение понимает, что ты подъезжаешь, когда ты действительно подъезжаешь.</p>
+        </article>
+        <article class="feat reveal">
+          <div class="feat__ico"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H4z" opacity=".25"/><path d="M3 18h18v2H3zM6 8h5v4H6z"/></svg></div>
+          <h3>Работает в фоне</h3>
+          <p>Не нужно держать экран включённым. Приложение следит за маршрутом, пока телефон лежит в кармане.</p>
+        </article>
+        <article class="feat reveal">
+          <div class="feat__ico"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 6.5 1-4.7 4.6 1.1 6.5L12 17l-5.9 3.1 1.1-6.5L2.5 9 9 8z"/></svg></div>
+          <h3>Любимые точки</h3>
+          <p>Дом, работа, дача, остановка у бабушки — сохраняй адреса и запускай будильник одним касанием.</p>
+        </article>
+        <article class="feat reveal">
+          <div class="feat__ico"><svg viewBox="0 0 24 24"><path d="M4 6h16v3H4zm0 5h16v3H4zm0 5h10v3H4z"/></svg></div>
+          <h3>Настраиваемый радиус</h3>
+          <p>Хочешь встать заранее — поставь радиус больше. Едешь в незнакомом городе — поставь меньше и выходи точно.</p>
+        </article>
+        <article class="feat reveal">
+          <div class="feat__ico"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 5v5.6l4 2.4-.9 1.6-5.1-3V7z"/></svg></div>
+          <h3>Экономит нервы</h3>
+          <p>Не надо каждые две минуты смотреть в карту. Один раз настроил — и забыл до самого сигнала.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ТРАНСПОРТ -->
+  <section class="sec sec--alt" id="transport">
+    <div class="wrap">
+      <h2 class="sec__title">Для всех, кто едет не за рулём</h2>
+      <p class="sec__lead">Наземный транспорт и электрички — там, где остановки легко проехать и легко прослушать.</p>
+      <div class="trans">
+        <div class="trans__item reveal"><span class="trans__emoji" aria-hidden="true">🚌</span><h3>Автобус</h3><p>Городской и пригородный</p></div>
+        <div class="trans__item reveal"><span class="trans__emoji" aria-hidden="true">🚎</span><h3>Троллейбус</h3><p>Тихий ход, мягкие остановки</p></div>
+        <div class="trans__item reveal"><span class="trans__emoji" aria-hidden="true">🚊</span><h3>Трамвай</h3><p>Стук колёс усыпляет лучше всего</p></div>
+        <div class="trans__item reveal"><span class="trans__emoji" aria-hidden="true">🚆</span><h3>Электричка</h3><p>Долгие перегоны, дальние станции</p></div>
+      </div>
+      <div class="strip">
+        <figure class="strip__item reveal"><img src="assets/tram-saratov.jpg" alt="Салон трамвая с пассажирами" loading="lazy"><figcaption>Трамвай</figcaption></figure>
+        <figure class="strip__item reveal"><img src="assets/bus-russia.jpg" alt="Пассажиры в салоне автобуса" loading="lazy"><figcaption>Автобус</figcaption></figure>
+        <figure class="strip__item reveal"><img src="assets/tram-minsk.jpg" alt="Салон трамвая, пассажиры у окон" loading="lazy"><figcaption>Троллейбус и трамвай</figcaption></figure>
+        <figure class="strip__item reveal"><img src="assets/window-norway.jpg" alt="Вид из окна поезда" loading="lazy"><figcaption>Электричка</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ФИЛОСОФИЯ -->
+  <section class="quote">
+    <div class="quote__bg" aria-hidden="true"><img src="assets/exhaustion.jpg" alt="" loading="lazy"></div>
+    <div class="wrap quote__in">
+      <h2>Погрузись в свой маленький мир</h2>
+      <p>Освободи внимание. Не контролируй маршрут — контролируй только то, чем занят прямо сейчас. Будь на 100% в моменте: с книгой, с музыкой, с любимым сериалом или с закрытыми глазами.</p>
+      <p class="quote__sign">Зацени новый уровень концентрации.</p>
+    </div>
+  </section>
+
+  <!-- ТАРИФ -->
+  <section class="sec" id="price">
+    <div class="wrap">
+      <h2 class="sec__title">Первый месяц — бесплатно</h2>
+      <div class="price">
+        <div class="price__card reveal">
+          <p class="price__badge">Старт</p>
+          <p class="price__num">0 ₽<span>/ первый месяц</span></p>
+          <ul>
+            <li>Установка и использование в течение месяца</li>
+            <li>Без ограничений по числу поездок</li>
+            <li>Звук и вибрация перед остановкой</li>
+            <li>Любимые остановки и маршруты</li>
+            <li>iOS и Android</li>
+          </ul>
+          <a class="btn btn--primary btn--wide" href="#download">Начать бесплатно</a>
+          <p class="price__fine">Условия продления показываются в приложении до оплаты.</p>
+        </div>
+        <div class="price__side">
+          <h3>Кому точно зайдёт</h3>
+          <ul class="ticks">
+            <li>Тем, кто ездит на работу и обратно каждый день</li>
+            <li>Тем, кто засыпает в транспорте за минуту</li>
+            <li>Тем, кто смотрит видео и не замечает названий</li>
+            <li>Тем, кто едет в незнакомый город и боится проехать</li>
+            <li>Тем, кто любит читать в дороге</li>
+          </ul>
+          <a class="btn btn--ghost" href="#download">Скачать приложение</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec sec--alt" id="faq">
+    <div class="wrap wrap--narrow">
+      <h2 class="sec__title">Частые вопросы</h2>
+      <div class="faq">
+        <details class="faq__item">
+          <summary>Приложение правда работает бесплатно?</summary>
+          <div class="faq__a"><p>Да. Установка и использование в течение первого месяца — бесплатно, без оплаты и без ввода карты на старте. Дальше условия продления показываются прямо в приложении.</p></div>
+        </details>
+        <details class="faq__item">
+          <summary>А если я засну очень крепко?</summary>
+          <div class="faq__a"><p>Оповещение двойное: громкий звук плюс вибрация. Радиус срабатывания настраивается — можно поставить его больше, чтобы сигнал начался за пару остановок до выхода и у тебя было время проснуться.</p></div>
+        </details>
+        <details class="faq__item">
+          <summary>Нужен ли интернет в дороге?</summary>
+          <div class="faq__a"><p>Оповещение строится на геолокации, поэтому в метро и в пригороде приложение продолжает следить за твоим положением. Карту и новые адреса лучше загрузить заранее — дома или на Wi-Fi.</p></div>
+        </details>
+        <details class="faq__item">
+          <summary>Сильно ли садится батарея?</summary>
+          <div class="faq__a"><p>Приложение использует геолокацию только пока будильник активен, и отключает слежение сразу после срабатывания. Держать его включённым весь день не нужно.</p></div>
+        </details>
+        <details class="faq__item">
+          <summary>На каких телефонах работает?</summary>
+          <div class="faq__a"><p>Геобудильник есть и на iOS, и на Android. Скачай его в App Store или Google Play — версия для твоей системы найдётся сама.</p></div>
+        </details>
+        <details class="faq__item">
+          <summary>Подходит для электричек и пригорода?</summary>
+          <div class="faq__a"><p>Да. Автобус, троллейбус, трамвай, пригородный поезд — везде, где есть остановка или станция с координатами. Особенно полезно на длинных перегонах, где легко потерять счёт станциям.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="download">
+    <div class="wrap cta__in">
+      <img class="cta__logo" src="assets/logo.png" alt="Иконка приложения Геобудильник" width="112" height="112">
+      <h2>Твоя остановка. Без контроля.</h2>
+      <p>Скачай Геобудильник — и перестань считать остановки в уме.</p>
+      <div class="hero__btns hero__btns--center">
+        <!-- TODO: подставить реальные ссылки на магазины приложений -->
+        <a class="btn btn--store" href="#" aria-label="Скачать в App Store">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.6.8-3.3.8-.7 0-1.7-.8-2.9-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.8-.4 6.9 1.1 9.2.8 1.1 1.6 2.3 2.8 2.3 1.1 0 1.5-.7 2.9-.7 1.3 0 1.7.7 2.9.7 1.2 0 2-1.1 2.7-2.2.9-1.3 1.3-2.6 1.3-2.7-.1 0-2.5-1-2.5-3.8zM14.3 5.9c.6-.8 1-1.8.9-2.9-.9.1-2 .6-2.7 1.4-.6.7-1.1 1.8-.9 2.8 1 .1 2-.5 2.7-1.3z"/></svg>
+          <span><small>Загрузить в</small>App Store</span>
+        </a>
+        <a class="btn btn--store" href="#" aria-label="Скачать в Google Play">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l.1.1 9.3-9.3v-.2L3.6 2.3zM16.1 15.4l-3.1-3.1v-.2l3.1-3.1.1.1 3.7 2.1c1 .6 1 1.6 0 2.2l-3.8 2zM15 16.5l-3.2-3.2-8.5 8.5c.4.3 1 .3 1.7-.1l10-5.2M15 7.9L5 2.7c-.7-.4-1.3-.4-1.7-.1l8.5 8.5L15 7.9z"/></svg>
+          <span><small>Доступно в</small>Google Play</span>
+        </a>
+      </div>
+      <p class="cta__fine">Первый месяц бесплатно · iOS и Android</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr__in">
+    <div class="ftr__brand">
+      <img src="assets/logo.png" alt="" width="32" height="32">
+      <span>Геобудильник</span>
+    </div>
+    <nav class="ftr__nav">
+      <a href="#how">Как работает</a>
+      <a href="#features">Возможности</a>
+      <a href="#transport">Транспорт</a>
+      <a href="#price">Тариф</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <p class="ftr__legal">© <span id="year">2026</span> Геобудильник.рф · Приложение для iOS и Android. Названия App Store и Google Play принадлежат их правообладателям. Фотографии на сайте — из открытых источников под свободными лицензиями.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
